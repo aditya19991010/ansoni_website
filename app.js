@@ -445,7 +445,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Console message for developers
     console.log('🚀 Portfolio website loaded successfully!');
     console.log('👨‍💻 Designed and developed for Aditya Naman Soni');
-    console.log('🔬 PhD Student in Computational Biology');
+    console.log('🔬 Explorer of Computational Biology domain');
     
     // Performance optimization: Lazy load sections
     const sections = document.querySelectorAll('section');
