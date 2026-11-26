@@ -312,12 +312,8 @@ svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width:
 .footer p { margin: 0; }
 .footer__top { text-decoration: none; font-weight: 500; }
 
-/* Reveal on scroll (only when JS is on) */
-.js .reveal { opacity: 0; transform: translateY(12px); transition: opacity .5s ease, transform .5s ease; }
-.js .reveal.is-visible { opacity: 1; transform: none; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .js .reveal { opacity: 1; transform: none; transition: none; }
   .btn:hover, .project:hover { transform: none; }
 }
 
@@ -328,5 +324,4 @@ svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width:
   .section, .hero { padding: 16px 0; }
   .section--alt { background: none; }
   .card, .pub { box-shadow: none; break-inside: avoid; }
-  .js .reveal { opacity: 1; transform: none; }
 }

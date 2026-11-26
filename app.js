@@ -1,7 +1,6 @@
-// Portfolio interactions: mobile nav, theme toggle, active section, reveal on scroll.
+// Portfolio interactions: mobile nav, theme toggle, active section.
 (function () {
   'use strict';
-  document.documentElement.classList.add('js');
 
   const header = document.querySelector('.site-header');
   const toggle = document.getElementById('nav-toggle');
@@ -47,19 +46,6 @@
       });
     }, { rootMargin: '-45% 0px -50% 0px' });
     document.querySelectorAll('main section[id]').forEach((s) => sectionObs.observe(s));
-
-    // Reveal on scroll
-    const revealObs = new IntersectionObserver((entries, obs) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-visible');
-          obs.unobserve(entry.target);
-        }
-      });
-    }, { rootMargin: '0px 0px -8% 0px' });
-    document.querySelectorAll('.reveal').forEach((el) => revealObs.observe(el));
-  } else {
-    document.querySelectorAll('.reveal').forEach((el) => el.classList.add('is-visible'));
   }
 
   // Footer year
